@@ -14,3 +14,22 @@ Most importantly, this means everything in the `app/` directory, but if you've f
 
 - Any assets you've added/updated in `public/`
 - Any updated versions of root files such as `.eslintrc.js`, etc.
+
+## remix 변경
+
+- 폴더기반 routing 안됨
+- `remix.config.js`에서 `routes`를 설정해야함
+- `routes`는 `path`와 `loader`로 구성됨
+- `loader`는 `loader: () => import('./routes/About')`와 같이 `import`로 설정해야함
+
+## remix server 실행
+
+```bash
+npm run dev
+```
+
+## remix build
+
+```bash
+npm run build
+```
